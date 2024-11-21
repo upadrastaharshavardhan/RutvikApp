@@ -114,8 +114,8 @@ export default function Register() {
             disabled={loading}
           >
             {loading ? 'Registering...' : 'Register'}
-            { setLoading(true);}
-            { setSuccess(true); // Set success state to true}
+           
+            
             { toast.success('Successfully registered!');}
          
           </button>

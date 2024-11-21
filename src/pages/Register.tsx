@@ -27,7 +27,7 @@ export default function Register() {
       toast.success('Successfully registered!');
       setTimeout(() => {
         navigate('/dashboard');
-      }, 2000); // Redirect after 2 seconds
+      }, 1000); // Redirect after 2 seconds
     } catch (error: any) {
       console.error('Registration error:', error);
       toast.error(error.message || 'Failed to register. Please try again.');
@@ -114,6 +114,9 @@ export default function Register() {
             disabled={loading}
           >
             {loading ? 'Registering...' : 'Register'}
+            {success ? 'Successfully registered!' : 'success'}
+            { toast.success('Successfully registered!'};
+             {toast.success ? 'Successfully registered! ' : 'success'}
           </button>
         </form>
 

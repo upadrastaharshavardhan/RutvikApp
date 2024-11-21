@@ -35,9 +35,9 @@ export default function Dashboard() {
     },
     { icon: MessageCircle, label: 'Our services', color: 'bg-yellow-100 text-yellow-600', path: 'https://upadrastaharshavardhan.github.io/rutvikservices/' },
     { icon: Users, label: 'Find Rutviks', color: 'bg-blue-100 text-blue-600', path: 'https://sites.google.com/view/rutviks/home' },
-    { icon: globe, label: 'NRI service', color: 'bg-red-100 text-red-600', path: 'https://rutviknriservices.netlify.app' },
+    { icon: Globe, label: 'NRI service', color: 'bg-red-100 text-red-600', path: 'https://rutviknriservices.netlify.app' },
     { icon: ShoppingBag, label: 'Pooja Samagri', color: 'bg-green-100 text-green-600', path: '/pooja-samagri' },
-    { icon: phone, label: 'Contact', color: 'bg-gray-100 text-gray-600', path: 'https://sites.google.com/view/contact-rutvik' },
+    { icon: Phone, label: 'Contact', color: 'bg-gray-100 text-gray-600', path: 'https://sites.google.com/view/contact-rutvik' },
   ];
 
   return (

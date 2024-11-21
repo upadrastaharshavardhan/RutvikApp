@@ -8,7 +8,7 @@ export default function Register() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
-  const [success, setSuccess] = useState(false); // Track registration success
+  const [success, setSuccess] = useState(false);
   const { register } = useAuth();
   const navigate = useNavigate();
 
@@ -23,13 +23,13 @@ export default function Register() {
     try {
       setLoading(true);
       await register(email, password, name);
-      setSuccess(true); // Mark success state
-      toast.success('Successfully registered!');
+      toast.success('Successfully registered!'); // Show success toast here
+      setSuccess(true); // Mark success state to show success message
+      setLoading(false); // Set loading state to false after registration is complete
     } catch (error: any) {
       console.error('Registration error:', error);
       toast.error(error.message || 'Failed to register. Please try again.');
-    } finally {
-      setLoading(false);
+      setLoading(false); // Set loading state to false if there's an error
     }
   };
 
@@ -41,18 +41,14 @@ export default function Register() {
           <div className="text-center">
             <h2 className="text-2xl font-bold text-gray-900">Registration Successful!</h2>
             <p className="text-gray-600 mt-4">Welcome, {name}!</p>
-            <button
-              onClick={() => toast.success('Stay tuned for more!')}
-              className="mt-6 px-6 py-2 bg-orange-600 text-white rounded-lg shadow hover:bg-orange-700 focus:outline-none"
-            >
-              Stay on this Page
-            </button>
-            <button
-              onClick={() => navigate('/login')} // Navigate to Login
-              className="mt-4 px-6 py-2 bg-gray-300 text-gray-800 rounded-lg shadow hover:bg-gray-400 focus:outline-none"
-            >
-              Go to Login
-            </button>
+            <div className="mt-6">
+              <button
+                onClick={() => navigate('/login')} // Navigate to Login
+                className="px-6 py-2 bg-orange-600 text-white rounded-lg shadow hover:bg-orange-700 focus:outline-none"
+              >
+                Go to Login
+              </button>
+            </div>
           </div>
         ) : (
           <>

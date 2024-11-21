@@ -36,7 +36,7 @@ export default function Register() {
     }
   };
 
-  if (success) {
+  if ( toast.success) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-50 to-orange-100">
         <div className="bg-white p-8 rounded-lg shadow-xl w-full max-w-md text-center">
@@ -113,11 +113,10 @@ export default function Register() {
             className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-orange-600 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 disabled:opacity-50 disabled:cursor-not-allowed"
             disabled={loading}
           >
-            {loading ? 'Registering...' : 'Register'
-             setLoading(true);
-             await register(email, password, name);
-             setSuccess(true); // Set success state to true
-              toast.success('Successfully registered!');}
+            {loading ? 'Registering...' : 'Register'}
+            { setLoading(true);}
+            { setSuccess(true); // Set success state to true}
+            { toast.success('Successfully registered!');}
          
           </button>
         </form>

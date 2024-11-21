@@ -36,7 +36,7 @@ export default function Register() {
     }
   };
 
-  if ( toast.success) {
+  if (success) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-50 to-orange-100">
         <div className="bg-white p-8 rounded-lg shadow-xl w-full max-w-md text-center">

@@ -116,7 +116,7 @@ export default function Register() {
             {loading ? 'Registering...' : 'Register'}
            
             
-            { toast.success('Successfully registered!');}
+            { toast.success('Successfully registered!')};
          
           </button>
         </form>

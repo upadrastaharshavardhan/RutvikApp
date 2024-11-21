@@ -6,7 +6,8 @@ import {
   Users,
   ShoppingBag,
   MessageCircle,
-  Settings,
+  phone,
+  globe,
   LogOut,
 } from 'lucide-react';
 import toast from 'react-hot-toast';

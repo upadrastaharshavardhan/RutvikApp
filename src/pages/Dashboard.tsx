@@ -31,7 +31,7 @@ export default function Dashboard() {
       icon: Calendar,
       label: 'Book Muhurtam',
       color: 'bg-purple-100 text-purple-600',
-      path: 'https://upadrastaharshavardhan.github.io/rutvik_login/'
+      path: 'https://bookmuhurtam.netlify.app/'
     },
     { icon: MessageCircle, label: 'Our services', color: 'bg-yellow-100 text-yellow-600', path: 'https://upadrastaharshavardhan.github.io/rutvikservices/' },
     { icon: Users, label: 'Find Rutviks', color: 'bg-blue-100 text-blue-600', path: 'https://sites.google.com/view/rutviks/home' },

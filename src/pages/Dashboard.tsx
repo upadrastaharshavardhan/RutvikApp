@@ -220,30 +220,7 @@ export default function Dashboard() {
     { icon: ShoppingBag, label: 'Pooja Samagri', color: 'bg-green-100 text-green-600', path: '/pooja-samagri' },
     { icon: Phone, label: 'Contact', color: 'bg-gray-100 text-gray-600', path: 'https://sites.google.com/view/contact-rutvik' },
   ];
-// new code 
-const services = [
-  {
-    icon: Flame,
-    title: 'Homams',
-    description: 'Sacred fire ceremonies including Ganapathi Homam, Chandi Homam, and more.',
-  },
-  {
-    icon: Home,
-    title: 'Muhurtams',
-    description: 'Auspicious timing for weddings, housewarmings, and naming ceremonies.',
-  },
-  {
-    icon: Users,
-    title: 'Consultations',
-    description: 'Expert guidance for dosha remedies and spiritual matters.',
-  },
-  {
-    icon: BookOpen,
-    title: 'Vedic Classes',
-    description: 'Learn ancient wisdom and spiritual practices from experienced teachers.',
-  },
-];
-// end here 
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 to-orange-100">
